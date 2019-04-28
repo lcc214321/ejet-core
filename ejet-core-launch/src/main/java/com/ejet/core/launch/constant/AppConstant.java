@@ -17,8 +17,6 @@ package com.ejet.core.launch.constant;
 
 /**
  * 系统常量
- *
- * @author Chill
  */
 public interface AppConstant {
 

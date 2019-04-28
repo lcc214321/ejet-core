@@ -69,7 +69,7 @@ public abstract class UuidUtil {
     }
 
 
-    public static String getUUIDTime() {
+    public static String getUUIDNumer() {
         lock.lock();
         String uuid = null;
         try {

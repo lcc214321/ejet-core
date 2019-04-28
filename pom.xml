@@ -20,6 +20,7 @@
         <module>ejet-core-cloud</module>
         <module>ejet-core-launch</module>
         <module>ejet-core-boot</module>
+        <module>ejet-core-swagger</module>
     </modules>
 
     <properties>

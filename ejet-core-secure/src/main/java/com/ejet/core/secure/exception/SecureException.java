@@ -21,8 +21,6 @@ import lombok.Getter;
 
 /**
  * Secure异常
- *
- * @author Chill
  */
 public class SecureException extends RuntimeException {
 	private static final long serialVersionUID = 2359767895161832954L;

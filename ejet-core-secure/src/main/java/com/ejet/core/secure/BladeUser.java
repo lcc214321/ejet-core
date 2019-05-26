@@ -22,8 +22,6 @@ import java.io.Serializable;
 
 /**
  * 用户实体
- *
- * @author Chill
  */
 @Data
 public class BladeUser implements Serializable {

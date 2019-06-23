@@ -24,7 +24,7 @@ import java.io.Serializable;
  * 用户实体
  */
 @Data
-public class BladeUser implements Serializable {
+public class SysUser implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
@@ -38,6 +38,11 @@ public class BladeUser implements Serializable {
 	 */
 	@ApiModelProperty(hidden = true)
 	private String tenantCode;
+	/**
+	 *部门id
+	 */
+	@ApiModelProperty(hidden = true)
+	private Integer deptId;
 	/**
 	 * 昵称
 	 */

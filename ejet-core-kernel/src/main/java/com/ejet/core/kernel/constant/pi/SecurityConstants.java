@@ -11,7 +11,7 @@ public interface SecurityConstants {
 	/**
 	 * 前缀
 	 */
-	String PROJECT_PREFIX = "pig_";
+	String PROJECT_PREFIX = "ejet_";
 
 	/**
 	 * oauth 相关前缀
@@ -20,7 +20,7 @@ public interface SecurityConstants {
 	/**
 	 * 项目的license
 	 */
-	String PROJECT_LICENSE = "made by pig";
+	String PROJECT_LICENSE = "made by Ejet";
 
 	/**
 	 * 内部

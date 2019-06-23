@@ -18,7 +18,7 @@ package com.ejet.core.boot.controller;
 import com.ejet.core.boot.file.CoreFile;
 import com.ejet.core.boot.file.CoreFileUtil;
 import com.ejet.core.kernel.api.R;
-import com.ejet.core.secure.BladeUser;
+import com.ejet.core.secure.SysUser;
 import com.ejet.core.secure.utils.SecureUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.multipart.MultipartFile;
@@ -27,9 +27,8 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
- * Blade控制器封装类
+ * 控制器基类封装类
  *
- * @author Chill
  */
 public class CoreController {
 
@@ -54,7 +53,7 @@ public class CoreController {
 	 *
 	 * @return BladeUser
 	 */
-	public BladeUser getUser() {
+	public SysUser getUser() {
 		return SecureUtil.getUser();
 	}
 

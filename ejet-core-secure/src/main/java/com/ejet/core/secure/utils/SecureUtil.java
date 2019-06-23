@@ -19,7 +19,7 @@ import com.ejet.core.kernel.utils.Charsets;
 import com.ejet.core.kernel.utils.Func;
 import com.ejet.core.kernel.utils.StringPool;
 import com.ejet.core.kernel.utils.WebUtil;
-import com.ejet.core.secure.BladeUser;
+import com.ejet.core.secure.SysUser;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtBuilder;
 import io.jsonwebtoken.Jwts;
@@ -35,8 +35,6 @@ import java.util.Map;
 
 /**
  * Secure工具类
- *
- * @author Chill
  */
 public class SecureUtil {
 	public static final String BLADE_USER_REQUEST_ATTR = "_BLADE_USER_REQUEST_ATTR_";
@@ -57,10 +55,10 @@ public class SecureUtil {
 	 *
 	 * @return BladeUser
 	 */
-	public static BladeUser getUser() {
+	public static SysUser getUser() {
 		HttpServletRequest request = WebUtil.getRequest();
 		// 优先从 request 中获取
-		BladeUser bladeUser = (BladeUser) request.getAttribute(BLADE_USER_REQUEST_ATTR);
+		SysUser bladeUser = (SysUser) request.getAttribute(BLADE_USER_REQUEST_ATTR);
 		if (bladeUser == null) {
 			bladeUser = getUser(request);
 			if (bladeUser != null) {
@@ -77,7 +75,7 @@ public class SecureUtil {
 	 * @param request request
 	 * @return BladeUser
 	 */
-	public static BladeUser getUser(HttpServletRequest request) {
+	public static SysUser getUser(HttpServletRequest request) {
 		Claims claims = getClaims(request);
 		if (claims == null) {
 			return null;
@@ -88,7 +86,7 @@ public class SecureUtil {
 		String account = Func.toStr(claims.get(SecureUtil.ACCOUNT));
 		String roleName = Func.toStr(claims.get(SecureUtil.ROLE_NAME));
 		String userName = Func.toStr(claims.get(SecureUtil.USER_NAME));
-		BladeUser bladeUser = new BladeUser();
+		SysUser bladeUser = new SysUser();
 		bladeUser.setUserId(userId);
 		bladeUser.setTenantCode(tenantCode);
 		bladeUser.setAccount(account);
@@ -105,7 +103,7 @@ public class SecureUtil {
 	 * @return userId
 	 */
 	public static Integer getUserId() {
-		BladeUser user = getUser();
+		SysUser user = getUser();
 		return (null == user) ? -1 : user.getUserId();
 	}
 
@@ -116,7 +114,7 @@ public class SecureUtil {
 	 * @return userId
 	 */
 	public static Integer getUserId(HttpServletRequest request) {
-		BladeUser user = getUser(request);
+		SysUser user = getUser(request);
 		return (null == user) ? -1 : user.getUserId();
 	}
 
@@ -126,7 +124,7 @@ public class SecureUtil {
 	 * @return userAccount
 	 */
 	public static String getUserAccount() {
-		BladeUser user = getUser();
+		SysUser user = getUser();
 		return (null == user) ? StringPool.EMPTY : user.getAccount();
 	}
 
@@ -137,7 +135,7 @@ public class SecureUtil {
 	 * @return userAccount
 	 */
 	public static String getUserAccount(HttpServletRequest request) {
-		BladeUser user = getUser(request);
+		SysUser user = getUser(request);
 		return (null == user) ? StringPool.EMPTY : user.getAccount();
 	}
 
@@ -147,7 +145,7 @@ public class SecureUtil {
 	 * @return userName
 	 */
 	public static String getUserName() {
-		BladeUser user = getUser();
+		SysUser user = getUser();
 		return (null == user) ? StringPool.EMPTY : user.getUserName();
 	}
 
@@ -158,7 +156,7 @@ public class SecureUtil {
 	 * @return userName
 	 */
 	public static String getUserName(HttpServletRequest request) {
-		BladeUser user = getUser(request);
+		SysUser user = getUser(request);
 		return (null == user) ? StringPool.EMPTY : user.getUserName();
 	}
 
@@ -168,7 +166,7 @@ public class SecureUtil {
 	 * @return userName
 	 */
 	public static String getUserRole() {
-		BladeUser user = getUser();
+		SysUser user = getUser();
 		return (null == user) ? StringPool.EMPTY : user.getRoleName();
 	}
 
@@ -179,7 +177,7 @@ public class SecureUtil {
 	 * @return userName
 	 */
 	public static String getUserRole(HttpServletRequest request) {
-		BladeUser user = getUser(request);
+		SysUser user = getUser(request);
 		return (null == user) ? StringPool.EMPTY : user.getRoleName();
 	}
 
@@ -190,7 +188,7 @@ public class SecureUtil {
 	 * @return tenantCode
 	 */
 	public static String getTenantCode() {
-		BladeUser user = getUser();
+		SysUser user = getUser();
 		return (null == user) ? StringPool.EMPTY : user.getTenantCode();
 	}
 
@@ -201,7 +199,7 @@ public class SecureUtil {
 	 * @return tenantCode
 	 */
 	public static String getTenantCode(HttpServletRequest request) {
-		BladeUser user = getUser(request);
+		SysUser user = getUser(request);
 		return (null == user) ? StringPool.EMPTY : user.getTenantCode();
 	}
 
@@ -266,9 +264,10 @@ public class SecureUtil {
 	 * @param audience audience
 	 * @param issuer   issuer
 	 * @param isExpire isExpire
+	 * @param expireTime expireTime
 	 * @return jwt
 	 */
-	public static String createJWT(Map<String, String> user, String audience, String issuer, boolean isExpire) {
+	public static String createJWT(Map<String, String> user, String audience, String issuer, boolean isExpire, Long expireTime) {
 		SignatureAlgorithm signatureAlgorithm = SignatureAlgorithm.HS256;
 
 		long nowMillis = System.currentTimeMillis();
@@ -289,7 +288,7 @@ public class SecureUtil {
 
 		//添加Token过期时间
 		if (isExpire) {
-			long expMillis = nowMillis + getExpire();
+			long expMillis = nowMillis + getExpire(expireTime);
 			Date exp = new Date(expMillis);
 			builder.setExpiration(exp).setNotBefore(now);
 		}
@@ -303,7 +302,10 @@ public class SecureUtil {
 	 *
 	 * @return expire
 	 */
-	public static long getExpire() {
+	public static long getExpire(Long expireTime) {
+		if(expireTime!=null && expireTime>=1000*5) {//至少5秒钟
+			return expireTime;
+		}
 		Calendar cal = Calendar.getInstance();
 		cal.add(Calendar.DAY_OF_YEAR, 1);
 		cal.set(Calendar.HOUR_OF_DAY, 3);

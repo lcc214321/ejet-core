@@ -8,11 +8,11 @@ public interface ServiceNameConstants {
 	/**
 	 * 认证服务的SERVICEID（zuul 配置的对应）
 	 */
-	String AUTH_SERVICE = "pig-auth";
+	String AUTH_SERVICE = "ejet-auth";
 
 	/**
 	 * UMPS模块
 	 */
-	String UMPS_SERVICE = "pig-upms";
+	String UMPS_SERVICE = "ejet-upms";
 
 }

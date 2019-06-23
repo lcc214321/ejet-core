@@ -103,7 +103,7 @@ CREATE TABLE `sys_dict`  (
   `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
   `parent_id` int(11) NULL DEFAULT 0 COMMENT '父主键',
   `code` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '字典码',
-  `dict_key` int(2) NULL DEFAULT NULL COMMENT '字典值',
+  `dict_key` int(2) NULL DEFAULT NULL COMMENT '字典值 -1:表示默认名称',
   `dict_value` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '字典名称',
   `sort` int(11) NULL DEFAULT NULL COMMENT '排序',
   `remark` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '字典备注',

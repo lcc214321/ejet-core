@@ -20,7 +20,7 @@ import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.ejet.core.kernel.constant.CoConstant;
 import com.ejet.core.kernel.utils.BeanUtil;
-import com.ejet.core.secure.BladeUser;
+import com.ejet.core.secure.SysUser;
 import com.ejet.core.secure.utils.SecureUtil;
 import org.springframework.validation.annotation.Validated;
 
@@ -49,7 +49,7 @@ public class BaseServiceImpl<M extends BaseMapper<T>, T extends BaseEntity> exte
 
 	@Override
 	public boolean save(T entity) {
-		BladeUser user = SecureUtil.getUser();
+		SysUser user = SecureUtil.getUser();
 		LocalDateTime now = LocalDateTime.now();
 		entity.setCreateUser(user.getUserId());
 		entity.setCreateTime(now);
@@ -62,7 +62,7 @@ public class BaseServiceImpl<M extends BaseMapper<T>, T extends BaseEntity> exte
 
 	@Override
 	public boolean updateById(T entity) {
-		BladeUser user = SecureUtil.getUser();
+		SysUser user = SecureUtil.getUser();
 		entity.setUpdateUser(user.getUserId());
 		entity.setUpdateTime(LocalDateTime.now());
 		return super.updateById(entity);
@@ -70,7 +70,7 @@ public class BaseServiceImpl<M extends BaseMapper<T>, T extends BaseEntity> exte
 
 	@Override
 	public boolean deleteLogic(@NotEmpty List<Integer> ids) {
-		BladeUser user = SecureUtil.getUser();
+		SysUser user = SecureUtil.getUser();
 		T entity = BeanUtil.newInstance(modelClass);
 		entity.setUpdateUser(user.getUserId());
 		entity.setUpdateTime(LocalDateTime.now());

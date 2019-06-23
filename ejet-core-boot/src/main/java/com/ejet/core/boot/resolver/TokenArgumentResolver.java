@@ -15,7 +15,7 @@
  */
 package com.ejet.core.boot.resolver;
 
-import com.ejet.core.secure.BladeUser;
+import com.ejet.core.secure.SysUser;
 import com.ejet.core.secure.utils.SecureUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.MethodParameter;
@@ -40,7 +40,7 @@ public class TokenArgumentResolver implements HandlerMethodArgumentResolver {
 	 */
 	@Override
 	public boolean supportsParameter(MethodParameter methodParameter) {
-		return methodParameter.getParameterType().equals(BladeUser.class);
+		return methodParameter.getParameterType().equals(SysUser.class);
 	}
 
 	/**

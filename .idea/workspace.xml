@@ -1,0 +1,1079 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6b15dc64-ec96-4d3a-bb62-8b20529c2963" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/ejet-core-kernel/src/main/java/com/ejet/core/kernel/utils/IOUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/ejet-core-kernel/src/main/java/com/ejet/core/kernel/utils/IOUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ejet-core-kernel/src/main/java/com/ejet/core/kernel/utils/IoUtil.java" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/ejet-core-comm/target/" />
+    <ignored path="$PROJECT_DIR$/ejet-core-logger/target/" />
+    <ignored path="$PROJECT_DIR$/ejet-core-kernel/target/" />
+    <ignored path="$PROJECT_DIR$/ejet-core-mybatis/target/" />
+    <ignored path="$PROJECT_DIR$/ejet-core-secure/target/" />
+    <ignored path="$PROJECT_DIR$/ejet-core-cloud/target/" />
+    <ignored path="$PROJECT_DIR$/ejet-core-launch/target/" />
+    <ignored path="$PROJECT_DIR$/ejet-core-boot/target/" />
+    <ignored path="$PROJECT_DIR$/ejet-core-swagger/target/" />
+    <ignored path="$PROJECT_DIR$/ejet-core-sqlbuilder/target/" />
+    <ignored path="$PROJECT_DIR$/ejet-core-kernel-web/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="256688668">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="32" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.146" value="1" />
+          <entry key="project.open.time.2" value="5" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.208" value="1" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.3" value="6" />
+          <entry key="project.open.time.4" value="4" />
+          <entry key="project.open.time.47" value="1" />
+          <entry key="project.open.time.5" value="4" />
+          <entry key="project.open.time.54" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.8" value="4" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="38" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="MODULES/mdl-ejet-core" value="1" />
+          <entry key="class" value="70" />
+          <entry key="java" value="625" />
+          <entry key="md" value="4" />
+          <entry key="pom" value="8" />
+          <entry key="properties" value="7" />
+          <entry key="sql" value="10" />
+          <entry key="txt" value="4" />
+          <entry key="xml" value="127" />
+          <entry key="yml" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="70" />
+          <entry key="JAVA" value="625" />
+          <entry key="Markdown" value="4" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="Properties" value="7" />
+          <entry key="SQL" value="10" />
+          <entry key="UML" value="1" />
+          <entry key="XML" value="135" />
+          <entry key="YAML" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="115" />
+          <entry key="java" value="5904" />
+          <entry key="md" value="80" />
+          <entry key="properties" value="356" />
+          <entry key="sql" value="2102" />
+          <entry key="txt" value="194" />
+          <entry key="xml" value="1816" />
+          <entry key="yml" value="133" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="5904" />
+          <entry key="Markdown" value="80" />
+          <entry key="PLAIN_TEXT" value="309" />
+          <entry key="Properties" value="356" />
+          <entry key="SQL" value="2102" />
+          <entry key="XML" value="1816" />
+          <entry key="YAML" value="133" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ejet-core-kernel-web/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>StringPool</find>
+      <find>public static String</find>
+      <find>setTablePrefix</find>
+      <find>BladeConstant</find>
+      <find>AppConstant</find>
+      <find>blade</find>
+      <find>float</find>
+      <find>exam_rate</find>
+      <find>redis</find>
+      <find>slf4j</find>
+      <find>nacos:</find>
+      <find>druid.version</find>
+      <find>druid</find>
+      <find>jackson</find>
+      <find>com.fasterxml</find>
+      <find>LocalDateTimeDeserializer</find>
+      <find>fasterxml</find>
+      <find>com.fasterxml.jackson</find>
+      <find>ClassVisitor</find>
+      <find>@Nullable</find>
+      <find>@Nullable</find>
+      <find>&lt;spring-boot-admin.version&gt;2.0.5&lt;/spring-boot-admin.version&gt;</find>
+      <find>spring-boot.version</find>
+      <find>collectionToDelimitedString</find>
+      <find>Nullable</find>
+      <find>isEmpty</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>#</replace>
+      <replace>CoConstant</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../../source/azkaban-3.69.0" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/ejet-core-kernel/src/main/java/com/ejet/core/kernel/utils/XmlUtil.java" />
+        <option value="$PROJECT_DIR$/ejet-core-kernel/src/main/java/com/ejet/core/kernel/support/BaseBeanCopier.java" />
+        <option value="$PROJECT_DIR$/ejet-core-kernel/src/main/java/com/ejet/core/kernel/utils/DateUtil.java" />
+        <option value="$PROJECT_DIR$/ejet-core-kernel/src/main/java/com/ejet/core/kernel/utils/NumberUtil.java" />
+        <option value="$PROJECT_DIR$/ejet-core-kernel/src/main/java/com/ejet/core/kernel/utils/IOUtil.java" />
+        <option value="$PROJECT_DIR$/ejet-core-kernel/src/main/java/com/ejet/core/kernel/support/StrFormatter.java" />
+        <option value="$PROJECT_DIR$/ejet-core-kernel/src/main/java/com/ejet/core/kernel/utils/BeanUtil.java" />
+        <option value="$PROJECT_DIR$/ejet-core-kernel/src/main/java/com/ejet/core/kernel/utils/Exceptions.java" />
+        <option value="$PROJECT_DIR$/ejet-core-kernel/src/main/java/com/ejet/core/kernel/gson/JsonUtil.java" />
+        <option value="$PROJECT_DIR$/ejet-core-kernel/src/main/java/com/ejet/core/kernel/utils/ObjectUtil.java" />
+        <option value="$PROJECT_DIR$/ejet-core-kernel-web/src/main/java/com/ejet/core/kernel/web/utils/ObjectUtil.java" />
+        <option value="$PROJECT_DIR$/ejet-core-kernel/src/main/java/com/ejet/core/kernel/utils/RegexUtil.java" />
+        <option value="$PROJECT_DIR$/ejet-core-kernel/src/main/java/com/ejet/core/kernel/utils/StringUtil.java" />
+        <option value="$PROJECT_DIR$/ejet-core-swagger/pom.xml" />
+        <option value="$PROJECT_DIR$/ejet-core-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/ejet-core-kernel/pom.xml" />
+        <option value="$PROJECT_DIR$/ejet-core-boot/pom.xml" />
+        <option value="$PROJECT_DIR$/ejet-core-comm/pom.xml" />
+        <option value="$PROJECT_DIR$/ejet-core-secure/pom.xml" />
+        <option value="$PROJECT_DIR$/ejet-core-secure/src/main/java/com/ejet/core/secure/aspect/AuthAspect.java" />
+        <option value="$PROJECT_DIR$/ejet-core-secure/src/main/java/com/ejet/core/secure/exception/SecureException.java" />
+        <option value="$PROJECT_DIR$/ejet-core-secure/src/main/java/com/ejet/core/secure/auth/AuthFun.java" />
+        <option value="$PROJECT_DIR$/ejet-core-secure/src/main/java/com/ejet/core/secure/interceptor/SecureInterceptor.java" />
+        <option value="$PROJECT_DIR$/ejet-core-secure/src/main/java/com/ejet/core/secure/utils/SecureUtil.java" />
+        <option value="$PROJECT_DIR$/ejet-core-mybatis/src/main/java/com/ejet/core/mybatisplus/base/BaseEntity.java" />
+        <option value="$PROJECT_DIR$/ejet-core-mybatis/src/main/java/com/ejet/core/mybatisplus/support/Condition.java" />
+        <option value="$PROJECT_DIR$/ejet-core-mybatis/src/main/java/com/ejet/core/mybatisplus/base/BaseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/ejet-core-comm/src/main/java/com/ejet/core/comm/spring/SpringRegisterUtil.java" />
+        <option value="$PROJECT_DIR$/ejet-core-comm/src/main/java/com/ejet/core/comm/App.java" />
+        <option value="$PROJECT_DIR$/ejet-core-logger/src/main/java/com/ejet/core/logger/publisher/UsualLogPublisher.java" />
+        <option value="$PROJECT_DIR$/ejet-core-logger/src/main/java/com/ejet/core/logger/event/ApiLogListener.java" />
+        <option value="$PROJECT_DIR$/ejet-core-logger/src/main/java/com/ejet/core/logger/model/LogApi.java" />
+        <option value="$PROJECT_DIR$/ejet-core-logger/src/main/java/com/ejet/core/logger/model/LogUsual.java" />
+        <option value="$PROJECT_DIR$/ejet-core-logger/src/main/java/com/ejet/core/logger/error/CoreErrorAttributes.java" />
+        <option value="$PROJECT_DIR$/ejet-core-logger/src/main/java/com/ejet/core/logger/event/ErrorLogListener.java" />
+        <option value="$PROJECT_DIR$/ejet-core-logger/src/main/java/com/ejet/core/logger/publisher/ApiLogPublisher.java" />
+        <option value="$PROJECT_DIR$/ejet-core-logger/src/main/java/com/ejet/core/logger/exception/ServiceException.java" />
+        <option value="$PROJECT_DIR$/ejet-core-logger/src/main/java/com/ejet/core/logger/error/CoreRestExceptionTranslator.java" />
+        <option value="$PROJECT_DIR$/ejet-core-logger/src/main/java/com/ejet/core/logger/model/LogError.java" />
+        <option value="$PROJECT_DIR$/ejet-core-logger/src/main/java/com/ejet/core/logger/event/UsualLogListener.java" />
+        <option value="$PROJECT_DIR$/ejet-core-logger/src/main/java/com/ejet/core/logger/error/CoreErrorController.java" />
+        <option value="$PROJECT_DIR$/ejet-core-logger/src/main/java/com/ejet/core/logger/publisher/ErrorLogPublisher.java" />
+        <option value="$PROJECT_DIR$/ejet-core-boot/src/main/java/com/ejet/core/boot/file/CoreFile.java" />
+        <option value="$PROJECT_DIR$/ejet-core-boot/src/main/java/com/ejet/core/boot/tenant/CoreTenantId.java" />
+        <option value="$PROJECT_DIR$/ejet-core-boot/src/main/java/com/ejet/core/boot/controller/CoreController.java" />
+        <option value="$PROJECT_DIR$/ejet-core-boot/src/main/java/com/ejet/core/boot/tenant/CoreTenantHandler.java" />
+        <option value="$PROJECT_DIR$/ejet-core-boot/src/main/java/com/ejet/core/boot/file/CoreFileProxyFactory.java" />
+        <option value="$PROJECT_DIR$/ejet-core-boot/src/main/java/com/ejet/core/boot/logger/RequestLogAspect.java" />
+        <option value="$PROJECT_DIR$/ejet-core-boot/src/main/java/com/ejet/core/boot/file/CoreFileUtil.java" />
+        <option value="$PROJECT_DIR$/ejet-core-kernel-web/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/devTools/apache-maven-3.5.0" />
+        <option name="userSettingsFile" value="D:\devTools\apache-maven-3.5.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="ejet-core" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="ejet-core" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="200" />
+    <option name="y" value="25" />
+    <option name="width" value="1378" />
+    <option name="height" value="738" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ejet-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ejet-core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ejet-core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ejet-core" type="462c0819:PsiDirectoryNode" />
+              <item name="ejet-core-kernel-web" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="D:/work/work_comm/BIV1.0" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ejet.core.kernel.utils" />
+      <recent name="com.ejet.core.kernel.support" />
+      <recent name="com.ejet.core.kernel.gson" />
+      <recent name="com.ejet.core.boot.loader" />
+      <recent name="com.ejet.core.kernel.tree" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\OpenSource\springCloud\ejet-core\ejet-core-kernel\src\main\java\com\ejet\core\kernel\support" />
+      <recent name="D:\OpenSource\springCloud\ejet-core\ejet-core-secure\src\main\java" />
+      <recent name="D:\OpenSource\springCloud\ejet-core\doc" />
+      <recent name="D:\OpenSource\springCloud\ejet-core\ejet-core-swagger\src\main\java\com\ejet\core\swagger" />
+      <recent name="D:\OpenSource\springCloud\ejet-core\ejet-core-boot\src\main\java\com\ejet\core\boot\tenant" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6b15dc64-ec96-4d3a-bb62-8b20529c2963" name="Default Changelist" comment="" />
+      <created>1554111844646</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554111844646</updated>
+      <workItem from="1554111848338" duration="10457000" />
+      <workItem from="1554169561209" duration="60026000" />
+      <workItem from="1554642799980" duration="3651000" />
+      <workItem from="1554821931959" duration="2707000" />
+      <workItem from="1555039389200" duration="44108000" />
+      <workItem from="1555263456185" duration="43000" />
+      <workItem from="1555323255200" duration="555000" />
+      <workItem from="1555333424028" duration="869000" />
+      <workItem from="1555510379935" duration="2238000" />
+      <workItem from="1555571843192" duration="6279000" />
+      <workItem from="1555903105059" duration="9638000" />
+      <workItem from="1556432712709" duration="4460000" />
+      <workItem from="1556605842239" duration="5273000" />
+      <workItem from="1556674159688" duration="20069000" />
+      <workItem from="1556768562269" duration="3312000" />
+      <workItem from="1557709960054" duration="945000" />
+      <workItem from="1557715875297" duration="3712000" />
+      <workItem from="1557916805704" duration="3000" />
+      <workItem from="1557990984230" duration="1975000" />
+      <workItem from="1558146854973" duration="8185000" />
+      <workItem from="1558454433812" duration="792000" />
+      <workItem from="1558853269190" duration="226000" />
+      <workItem from="1558881938438" duration="604000" />
+      <workItem from="1558883445340" duration="3247000" />
+      <workItem from="1559367034725" duration="6038000" />
+      <workItem from="1560480015883" duration="1207000" />
+      <workItem from="1560661636811" duration="3142000" />
+      <workItem from="1561052614576" duration="6024000" />
+      <workItem from="1561301772927" duration="10600000" />
+      <workItem from="1561569072755" duration="2922000" />
+      <workItem from="1561776520178" duration="2201000" />
+      <workItem from="1562728571562" duration="2609000" />
+      <workItem from="1562751909579" duration="2645000" />
+      <workItem from="1562768698203" duration="2116000" />
+      <workItem from="1562809589182" duration="7598000" />
+      <workItem from="1563028888624" duration="724000" />
+      <workItem from="1563440633338" duration="2203000" />
+      <workItem from="1564712624983" duration="19623000" />
+    </task>
+    <task id="LOCAL-00001" summary="init project">
+      <created>1555262360740</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1555262360740</updated>
+    </task>
+    <task id="LOCAL-00002" summary="新增部分工具类及模块">
+      <created>1556436450868</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1556436450868</updated>
+    </task>
+    <task id="LOCAL-00003" summary="修改部分校验模块">
+      <created>1557717875312</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1557717875312</updated>
+    </task>
+    <task id="LOCAL-00004" summary="修改boot模块">
+      <created>1557729863715</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1557729863715</updated>
+    </task>
+    <task id="LOCAL-00005" summary="新增校验">
+      <created>1558454509144</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1558454509144</updated>
+    </task>
+    <task id="LOCAL-00006" summary="新增校验">
+      <created>1558887335236</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1558887335236</updated>
+    </task>
+    <task id="LOCAL-00007" summary="新增校验">
+      <created>1561308372918</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1561308372918</updated>
+    </task>
+    <task id="LOCAL-00008" summary="新增kernel-web项目，替换kernel项目">
+      <created>1564734434309</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1564734434309</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="263026000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.70454544" visible="true" weight="0.32854986" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Structure" order="4" sideWeight="0.29545453" side_tool="true" weight="0.2673716" />
+      <window_info id="Web" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.51602566" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848944" visible="true" weight="0.3525641" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3349359" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32852563" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.32852563" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007553" side_tool="true" weight="0.30128205" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49924472" weight="0.30128205" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32930514" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" visible="true" weight="0.14425983" />
+      <window_info anchor="right" id="Bean Validation" order="7" weight="0.32930514" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.70454544" visible="true" weight="0.29305136" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Structure" order="4" sideWeight="0.29545453" side_tool="true" weight="0.2673716" />
+      <window_info id="Web" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.51602566" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848944" visible="true" weight="0.3525641" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3349359" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32852563" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.32852563" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007553" side_tool="true" weight="0.30128205" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49924472" weight="0.30128205" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32930514" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info active="true" anchor="right" id="Maven Projects" order="6" visible="true" weight="0.14425983" />
+      <window_info anchor="right" id="Bean Validation" order="7" weight="0.32930514" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
+    <MESSAGE value="init project" />
+    <MESSAGE value="新增部分工具类及模块" />
+    <MESSAGE value="修改部分校验模块" />
+    <MESSAGE value="修改boot模块" />
+    <MESSAGE value="新增校验" />
+    <MESSAGE value="新增kernel-web项目，替换kernel项目" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增kernel-web项目，替换kernel项目" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ejet-core-mybatis/src/main/java/com/ejet/core/mybatisplus/generator/MybatisPlusGenerator.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ejet-core-mybatis/src/main/java/com/ejet/core/mybatisplus/generator/App.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ejet-core-mybatis/src/main/java/com/ejet/core/mybatisplus/generator/MybatisPlusGenerator.java</url>
+          <line>152</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ejet-core-boot/src/main/java/com/ejet/core/boot/controller/CoreController.java</url>
+          <line>114</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ejet-core-kernel-web/src/main/java/com/ejet/core/kernel/web/utils/ObjectUtil.java</url>
+          <line>15</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.5.RELEASE/spring-core-5.1.5.RELEASE.jar!/org/springframework/util/StringUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="37" selection-end-column="5" />
+          <folding>
+            <element signature="e#1051#1052#0" expanded="true" />
+            <element signature="e#1103#1104#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-kernel/src/main/java/com/ejet/core/kernel/utils/DateFormatUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-kernel/src/main/java/com/ejet/core/kernel/utils/StringUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-140">
+          <caret line="192" selection-start-line="192" selection-end-line="192" />
+          <folding>
+            <element signature="e#1399#1400#0" expanded="true" />
+            <element signature="e#1436#1437#0" expanded="true" />
+            <element signature="e#1292#1293#0" expanded="true" />
+            <element signature="e#1358#1359#0" expanded="true" />
+            <element signature="e#4029#4030#0" expanded="true" />
+            <element signature="e#4085#4086#0" expanded="true" />
+            <element signature="e#21088#21089#0" expanded="true" />
+            <element signature="e#21140#21141#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-kernel-web/src/main/java/com/ejet/core/kernel/web/api/R.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-kernel-web/src/main/java/com/ejet/core/kernel/web/api/IResultCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-comm/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-logger/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-mybatis/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-swagger/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-165">
+          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-secure/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-kernel-web/src/main/java/com/ejet/core/kernel/web/api/ResultCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-secure/src/main/java/com/ejet/core/secure/aspect/AuthAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="65" column="28" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-secure/src/main/java/com/ejet/core/secure/exception/SecureException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-secure/src/main/java/com/ejet/core/secure/interceptor/SecureInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="46" lean-forward="true" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-secure/src/main/java/com/ejet/core/secure/auth/AuthFun.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-kernel-web/src/main/java/com/ejet/core/kernel/web/utils/Charsets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-kernel-web/src/main/java/com/ejet/core/kernel/web/utils/Base64Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-secure/src/main/java/com/ejet/core/secure/utils/SecureUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-585">
+          <caret line="50" column="96" selection-start-line="50" selection-start-column="96" selection-end-line="50" selection-end-column="96" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-mybatis/src/main/java/com/ejet/core/mybatisplus/base/BaseEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="26" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-mybatis/src/main/java/com/ejet/core/mybatisplus/support/Condition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-mybatis/src/main/java/com/ejet/core/mybatisplus/base/BaseServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-480">
+          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-mybatis/src/main/java/com/ejet/core/mybatisplus/base/TenantEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-comm/src/main/java/com/ejet/core/comm/spring/SpringRegisterUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-comm/src/main/java/com/ejet/core/comm/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-logger/src/main/java/com/ejet/core/logger/event/ApiLogListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-logger/src/main/java/com/ejet/core/logger/model/LogApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-logger/src/main/java/com/ejet/core/logger/model/LogUsual.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-logger/src/main/java/com/ejet/core/logger/error/CoreErrorAttributes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-logger/src/main/java/com/ejet/core/logger/event/ErrorLogListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-logger/src/main/java/com/ejet/core/logger/publisher/ApiLogPublisher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-logger/src/main/java/com/ejet/core/logger/exception/ServiceException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-logger/src/main/java/com/ejet/core/logger/error/CoreRestExceptionTranslator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1995">
+          <caret line="147" column="11" selection-start-line="147" selection-start-column="11" selection-end-line="147" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-logger/src/main/java/com/ejet/core/logger/publisher/UsualLogPublisher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="21" column="48" lean-forward="true" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-logger/src/main/java/com/ejet/core/logger/model/LogError.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-boot/src/main/java/com/ejet/core/boot/file/CoreFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-boot/src/main/java/com/ejet/core/boot/tenant/CoreTenantId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-boot/src/main/java/com/ejet/core/boot/controller/CoreController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+          <folding>
+            <element signature="e#1737#1738#0" expanded="true" />
+            <element signature="e#1763#1764#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-logger/src/main/java/com/ejet/core/logger/publisher/ErrorLogPublisher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-logger/src/main/java/com/ejet/core/logger/error/CoreErrorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-logger/src/main/java/com/ejet/core/logger/event/UsualLogListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-boot/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-boot/src/main/java/com/ejet/core/boot/file/CoreFileProxyFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="64" column="36" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-boot/src/main/java/com/ejet/core/boot/tenant/CoreTenantHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="62" column="153" selection-start-line="62" selection-start-column="153" selection-end-line="62" selection-end-column="153" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-boot/src/main/java/com/ejet/core/boot/logger/RequestLogAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="69" column="50" selection-start-line="69" selection-start-column="50" selection-end-line="69" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-boot/src/main/java/com/ejet/core/boot/file/CoreFileUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="70" column="18" lean-forward="true" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="18" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1739#1740#0" expanded="true" />
+            <element signature="e#1809#1810#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-launch/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-dependencies/2.1.3.RELEASE/spring-boot-dependencies-2.1.3.RELEASE.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="254" column="12" selection-start-line="254" selection-start-column="12" selection-end-line="254" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-kernel/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-kernel/src/main/java/com/ejet/core/kernel/utils/IOUtil.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejet-core-kernel-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>ejet-core:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>ejet-core-kernel-web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

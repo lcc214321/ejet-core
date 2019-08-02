@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ejet-core-boot" />
+        <module name="ejet-core-cloud" />
+        <module name="ejet-core-comm" />
+        <module name="ejet-core-kernel-web" />
+        <module name="ejet-core-launch" />
+        <module name="ejet-core-logger" />
+        <module name="ejet-core-mybatis" />
+        <module name="ejet-core-secure" />
+        <module name="ejet-core-swagger" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ejet-core" target="1.8" />
+      <module name="ejet-core-boot" target="1.8" />
+      <module name="ejet-core-cloud" target="1.8" />
+      <module name="ejet-core-comm" target="1.8" />
+      <module name="ejet-core-kernel" target="1.8" />
+      <module name="ejet-core-kernel-web" target="1.8" />
+      <module name="ejet-core-launch" target="1.8" />
+      <module name="ejet-core-logger" target="1.8" />
+      <module name="ejet-core-mybatis" target="1.8" />
+      <module name="ejet-core-secure" target="1.8" />
+      <module name="ejet-core-sqlbuilder" target="1.8" />
+      <module name="ejet-core-swagger" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ejet-core.iml" filepath="$PROJECT_DIR$/ejet-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ejet-core-boot/ejet-core-boot.iml" filepath="$PROJECT_DIR$/ejet-core-boot/ejet-core-boot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ejet-core-cloud/ejet-core-cloud.iml" filepath="$PROJECT_DIR$/ejet-core-cloud/ejet-core-cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ejet-core-comm/ejet-core-comm.iml" filepath="$PROJECT_DIR$/ejet-core-comm/ejet-core-comm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ejet-core-kernel-web/ejet-core-kernel-web.iml" filepath="$PROJECT_DIR$/ejet-core-kernel-web/ejet-core-kernel-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ejet-core-launch/ejet-core-launch.iml" filepath="$PROJECT_DIR$/ejet-core-launch/ejet-core-launch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ejet-core-logger/ejet-core-logger.iml" filepath="$PROJECT_DIR$/ejet-core-logger/ejet-core-logger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ejet-core-mybatis/ejet-core-mybatis.iml" filepath="$PROJECT_DIR$/ejet-core-mybatis/ejet-core-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ejet-core-secure/ejet-core-secure.iml" filepath="$PROJECT_DIR$/ejet-core-secure/ejet-core-secure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ejet-core-swagger/ejet-core-swagger.iml" filepath="$PROJECT_DIR$/ejet-core-swagger/ejet-core-swagger.iml" />
+    </modules>
+  </component>
+</project>

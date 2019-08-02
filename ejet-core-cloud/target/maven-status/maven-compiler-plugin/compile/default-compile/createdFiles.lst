@@ -1,0 +1,5 @@
+com\ejet\core\cloud\feign\FeignHystrixConcurrencyStrategy$WrappedCallable.class
+com\ejet\core\cloud\feign\CoFeignRequestHeaderInterceptor.class
+com\ejet\core\cloud\config\CoFeignConfiguration.class
+com\ejet\core\cloud\feign\FeignHystrixConcurrencyStrategy.class
+com\ejet\core\cloud\constant\Constant.class

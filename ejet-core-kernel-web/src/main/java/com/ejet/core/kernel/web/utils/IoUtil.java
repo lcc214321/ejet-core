@@ -1,4 +1,4 @@
-package com.ejet.core.kernel.utils;
+package com.ejet.core.kernel.web.utils;
 
 import org.springframework.lang.Nullable;
 

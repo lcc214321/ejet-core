@@ -1,0 +1,6 @@
+com\ejet\core\swagger\SwaggerProperties$Contact.class
+com\ejet\core\swagger\SwaggerProperties$AuthorizationScope.class
+com\ejet\core\swagger\SwaggerProperties$Authorization.class
+com\ejet\core\swagger\SwaggerAutoConfiguration.class
+com\ejet\core\swagger\SwaggerProperties.class
+META-INF\spring-configuration-metadata.json

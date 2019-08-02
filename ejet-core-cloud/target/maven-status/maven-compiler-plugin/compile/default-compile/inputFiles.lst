@@ -1,0 +1,4 @@
+D:\OpenSource\springCloud\ejet-core\ejet-core-cloud\src\main\java\com\ejet\core\cloud\constant\Constant.java
+D:\OpenSource\springCloud\ejet-core\ejet-core-cloud\src\main\java\com\ejet\core\cloud\config\CoFeignConfiguration.java
+D:\OpenSource\springCloud\ejet-core\ejet-core-cloud\src\main\java\com\ejet\core\cloud\feign\CoFeignRequestHeaderInterceptor.java
+D:\OpenSource\springCloud\ejet-core\ejet-core-cloud\src\main\java\com\ejet\core\cloud\feign\FeignHystrixConcurrencyStrategy.java

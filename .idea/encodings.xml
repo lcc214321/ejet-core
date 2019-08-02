@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ejet-core-boot" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ejet-core-cloud" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ejet-core-comm" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ejet-core-kernel" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ejet-core-kernel-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ejet-core-launch" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ejet-core-logger" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ejet-core-mybatis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ejet-core-secure" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ejet-core-swagger" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,8 @@
+com\ejet\core\mybatisplus\base\BaseServiceImpl.class
+com\ejet\core\mybatisplus\base\BaseEntity.class
+com\ejet\core\mybatisplus\support\Query.class
+com\ejet\core\mybatisplus\base\TenantEntity.class
+com\ejet\core\mybatisplus\support\BaseEntityWrapper.class
+com\ejet\core\mybatisplus\support\Condition.class
+com\ejet\core\mybatisplus\CoreMetaObjectHandler.class
+com\ejet\core\mybatisplus\base\BaseService.class

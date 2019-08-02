@@ -18,9 +18,9 @@ package com.ejet.core.mybatisplus.support;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.ejet.core.kernel.utils.BeanUtil;
-import com.ejet.core.kernel.utils.Func;
-import com.ejet.core.kernel.utils.StringUtil;
+import com.ejet.core.kernel.web.utils.BeanUtil;
+import com.ejet.core.kernel.web.utils.Func;
+import com.ejet.core.kernel.web.utils.StringUtil;
 
 import java.util.Map;
 

@@ -1,14 +1,13 @@
 package com.ejet.core.kernel.support;
 
 import com.ejet.core.kernel.utils.StringPool;
-import org.springframework.lang.Nullable;
 
 import java.io.Writer;
 
 /**
  * FastStringWriter
  *
- * @author L.cm
+ * @author Ejet
  */
 public class FastStringWriter extends Writer {
 	private StringBuilder builder;
@@ -24,7 +23,7 @@ public class FastStringWriter extends Writer {
 		builder = new StringBuilder(capacity);
 	}
 
-	public FastStringWriter(@Nullable final StringBuilder builder) {
+	public FastStringWriter(final StringBuilder builder) {
 		this.builder = builder != null ? builder : new StringBuilder(64);
 	}
 

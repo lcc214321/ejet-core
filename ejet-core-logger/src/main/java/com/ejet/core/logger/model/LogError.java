@@ -19,7 +19,7 @@ package com.ejet.core.logger.model;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.ejet.core.kernel.utils.DateUtil;
+import com.ejet.core.kernel.web.utils.DateUtil;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;

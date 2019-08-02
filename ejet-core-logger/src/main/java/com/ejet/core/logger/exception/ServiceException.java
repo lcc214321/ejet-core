@@ -15,8 +15,8 @@
  */
 package com.ejet.core.logger.exception;
 
-import com.ejet.core.kernel.api.IResultCode;
-import com.ejet.core.kernel.api.ResultCode;
+import com.ejet.core.kernel.web.api.IResultCode;
+import com.ejet.core.kernel.web.api.ResultCode;
 import lombok.Getter;
 
 

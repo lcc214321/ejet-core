@@ -1,6 +1,5 @@
 package com.ejet.core.kernel.utils;
 
-import org.springframework.util.Assert;
 
 import java.text.ParseException;
 import java.util.Calendar;
@@ -108,7 +107,9 @@ public class DateUtil {
      * @return 设置后的时间
      */
     private static Date set(Date date, int calendarField, int amount) {
-        Assert.notNull(date, "The date must not be null");
+        if(date==null) {
+            throw new RuntimeException("The date must not be null");
+        }
         Calendar c = Calendar.getInstance();
         c.setLenient(false);
         c.setTime(date);
@@ -116,6 +117,7 @@ public class DateUtil {
         return c.getTime();
     }
 
+    public static final String PATTERN_DATETIME_LONG = "yyyy-MM-dd HH:mm:sss";
     public static final String PATTERN_DATETIME = "yyyy-MM-dd HH:mm:ss";
     public static final String PATTERN_DATE = "yyyy-MM-dd";
     public static final String PATTERN_TIME = "HH:mm:ss";

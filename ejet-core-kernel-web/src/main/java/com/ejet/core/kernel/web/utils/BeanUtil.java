@@ -1,8 +1,8 @@
-package com.ejet.core.kernel.utils;
+package com.ejet.core.kernel.web.utils;
 
 
-import com.ejet.core.kernel.support.BaseBeanCopier;
-import com.ejet.core.kernel.support.BeanProperty;
+import com.ejet.core.kernel.web.support.BaseBeanCopier;
+import com.ejet.core.kernel.web.support.BeanProperty;
 import org.springframework.beans.BeansException;
 import org.springframework.cglib.beans.BeanGenerator;
 import org.springframework.cglib.beans.BeanMap;

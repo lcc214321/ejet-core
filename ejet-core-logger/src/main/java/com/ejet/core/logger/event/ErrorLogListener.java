@@ -16,7 +16,7 @@
 package com.ejet.core.logger.event;
 
 
-import com.ejet.core.kernel.utils.WebUtil;
+import com.ejet.core.kernel.web.utils.WebUtil;
 import com.ejet.core.launch.props.CoreProperties;
 import com.ejet.core.launch.server.ServerInfo;
 import com.ejet.core.logger.constant.EventConstant;

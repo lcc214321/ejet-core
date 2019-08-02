@@ -1,6 +1,6 @@
 package com.ejet.core.comm.spring;
 
-import com.ejet.core.kernel.utils.StringUtil;
+import com.ejet.core.kernel.web.utils.StringUtil;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -8,8 +8,9 @@ import org.springframework.context.ConfigurableApplicationContext;
 import java.util.Iterator;
 import java.util.Map;
 
-import static com.ejet.core.kernel.utils.SpringUtil.getBean;
-import static com.ejet.core.kernel.utils.SpringUtil.getContext;
+import static com.ejet.core.kernel.web.utils.SpringUtil.getBean;
+import static com.ejet.core.kernel.web.utils.SpringUtil.getContext;
+
 
 /**
  * 动态注册spring DataSourceBean

@@ -6,46 +6,43 @@
         <artifactId>ejet-core</artifactId>
         <groupId>com.ejet</groupId>
         <version>2.0.0</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>ejet-core-swagger</artifactId>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>ejet-core-kernel-web</artifactId>
     <name>${project.artifactId}</name>
     <version>${ejet-core.version}</version>
     <packaging>jar</packaging>
-
+    <description>核心web包,被其他模块引用</description>
 
     <dependencies>
 
-        <!-- ejet kernel -->
+        <!-- ejet-core -->
         <dependency>
             <groupId>com.ejet</groupId>
-            <artifactId>ejet-core-kernel-web</artifactId>
+            <artifactId>ejet-core-launch</artifactId>
             <version>${ejet-core.version}</version>
         </dependency>
 
-        <!--Swagger-->
+        <!-- Swagger -->
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
-            <version>${swagger.version}</version>
             <exclusions>
                 <exclusion>
                     <groupId>io.swagger</groupId>
                     <artifactId>swagger-models</artifactId>
                 </exclusion>
             </exclusions>
+            <version>${swagger.version}</version>
         </dependency>
         <dependency>
             <groupId>io.swagger</groupId>
             <artifactId>swagger-models</artifactId>
             <version>${swagger-models.version}</version>
         </dependency>
-        <dependency>
-            <groupId>com.github.xiaoymin</groupId>
-            <artifactId>swagger-bootstrap-ui</artifactId>
-            <version>${swagger-bootstrapui.version}</version>
-        </dependency>
+
 
     </dependencies>
 

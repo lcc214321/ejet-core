@@ -16,10 +16,10 @@
 
 package com.ejet.core.logger.publisher;
 
-import com.ejet.core.kernel.utils.Exceptions;
-import com.ejet.core.kernel.utils.Func;
-import com.ejet.core.kernel.utils.SpringUtil;
-import com.ejet.core.kernel.utils.WebUtil;
+import com.ejet.core.kernel.web.utils.Exceptions;
+import com.ejet.core.kernel.web.utils.Func;
+import com.ejet.core.kernel.web.utils.SpringUtil;
+import com.ejet.core.kernel.web.utils.WebUtil;
 import com.ejet.core.logger.constant.EventConstant;
 import com.ejet.core.logger.event.ErrorLogEvent;
 import com.ejet.core.logger.model.LogError;

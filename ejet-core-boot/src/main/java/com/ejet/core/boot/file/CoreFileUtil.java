@@ -15,8 +15,8 @@
  */
 package com.ejet.core.boot.file;
 
-import com.ejet.core.kernel.utils.StringPool;
-import com.ejet.core.kernel.utils.StringUtil;
+import com.ejet.core.kernel.web.utils.StringPool;
+import com.ejet.core.kernel.web.utils.StringUtil;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.*;

@@ -15,9 +15,9 @@
  */
 package com.ejet.core.logger.error;
 
-import com.ejet.core.kernel.api.R;
-import com.ejet.core.kernel.api.ResultCode;
-import com.ejet.core.kernel.utils.BeanUtil;
+import com.ejet.core.kernel.web.api.R;
+import com.ejet.core.kernel.web.api.ResultCode;
+import com.ejet.core.kernel.web.utils.BeanUtil;
 import com.ejet.core.logger.publisher.ErrorLogPublisher;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.web.servlet.error.DefaultErrorAttributes;

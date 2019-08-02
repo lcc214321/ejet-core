@@ -1,11 +1,11 @@
 package com.ejet.core.secure.interceptor;
 
-import com.ejet.core.kernel.api.R;
-import com.ejet.core.kernel.api.ResultCode;
-import com.ejet.core.kernel.constant.CoConstant;
-import com.ejet.core.kernel.jackson.JsonUtil;
-import com.ejet.core.kernel.utils.StringPool;
-import com.ejet.core.kernel.utils.WebUtil;
+import com.ejet.core.kernel.web.api.R;
+import com.ejet.core.kernel.web.api.ResultCode;
+import com.ejet.core.kernel.web.constant.CoConstant;
+import com.ejet.core.kernel.web.jackson.JsonUtil;
+import com.ejet.core.kernel.web.utils.StringPool;
+import com.ejet.core.kernel.web.utils.WebUtil;
 import com.ejet.core.secure.utils.SecureUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;

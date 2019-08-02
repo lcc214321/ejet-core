@@ -15,10 +15,10 @@
  */
 package com.ejet.core.secure.utils;
 
-import com.ejet.core.kernel.utils.Charsets;
-import com.ejet.core.kernel.utils.Func;
-import com.ejet.core.kernel.utils.StringPool;
-import com.ejet.core.kernel.utils.WebUtil;
+import com.ejet.core.kernel.web.utils.Charsets;
+import com.ejet.core.kernel.web.utils.Func;
+import com.ejet.core.kernel.web.utils.StringPool;
+import com.ejet.core.kernel.web.utils.WebUtil;
 import com.ejet.core.secure.SysUser;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtBuilder;

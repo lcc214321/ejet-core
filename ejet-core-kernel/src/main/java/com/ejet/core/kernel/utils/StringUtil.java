@@ -1,21 +1,19 @@
 package com.ejet.core.kernel.utils;
 
-import com.ejet.core.kernel.support.StrFormatter;
-import com.ejet.core.kernel.support.StrSpliter;
-import org.springframework.util.Assert;
-import org.springframework.web.util.HtmlUtils;
 
 import java.io.StringReader;
 import java.io.StringWriter;
 import java.text.MessageFormat;
-import java.util.*;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.UUID;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.Stream;
 
 /**
  * 继承自Spring util的工具类，减少jar依赖
  */
-public class StringUtil extends org.springframework.util.StringUtils {
+public class StringUtil {
 
 	public static final int INDEX_NOT_FOUND = -1;
 
@@ -39,6 +37,22 @@ public class StringUtil extends org.springframework.util.StringUtils {
 	 */
 	public static boolean isBlank(final CharSequence cs) {
 		return !StringUtil.hasText(cs);
+	}
+
+	public static boolean hasText(CharSequence str) {
+		return str != null && str.length() > 0 && containsText(str);
+	}
+
+	private static boolean containsText(CharSequence str) {
+		int strLen = str.length();
+
+		for(int i = 0; i < strLen; ++i) {
+			if (!Character.isWhitespace(str.charAt(i))) {
+				return true;
+			}
+		}
+
+		return false;
 	}
 
 	/**
@@ -112,9 +126,6 @@ public class StringUtil extends org.springframework.util.StringUtils {
 	 * @param coll the {@code Collection} to convert
 	 * @return the delimited {@code String}
 	 */
-	public static String join(Collection<?> coll) {
-		return StringUtil.collectionToCommaDelimitedString(coll);
-	}
 
 	/**
 	 * Convert a {@code Collection} into a delimited {@code String} (e.g. CSV).
@@ -128,29 +139,32 @@ public class StringUtil extends org.springframework.util.StringUtils {
 		return StringUtil.collectionToDelimitedString(coll, delim);
 	}
 
-	/**
-	 * Convert a {@code String} array into a comma delimited {@code String}
-	 * (i.e., CSV).
-	 * <p>Useful for {@code toString()} implementations.
-	 *
-	 * @param arr the array to display
-	 * @return the delimited {@code String}
-	 */
-	public static String join(Object[] arr) {
-		return StringUtil.arrayToCommaDelimitedString(arr);
+	public static String collectionToDelimitedString(Collection<?> coll, String delim) {
+		return collectionToDelimitedString(coll, delim, "", "");
 	}
 
-	/**
-	 * Convert a {@code String} array into a delimited {@code String} (e.g. CSV).
-	 * <p>Useful for {@code toString()} implementations.
-	 *
-	 * @param arr   the array to display
-	 * @param delim the delimiter to use (typically a ",")
-	 * @return the delimited {@code String}
-	 */
-	public static String join(Object[] arr, String delim) {
-		return StringUtil.arrayToDelimitedString(arr, delim);
+	public static boolean isEmpty(Collection<?> collection) {
+		return collection == null || collection.isEmpty();
 	}
+
+	public static String collectionToDelimitedString(Collection<?> coll, String delim, String prefix, String suffix) {
+		if (isEmpty(coll)) {
+			return "";
+		} else {
+			StringBuilder sb = new StringBuilder();
+			Iterator it = coll.iterator();
+
+			while(it.hasNext()) {
+				sb.append(prefix).append(it.next()).append(suffix);
+				if (it.hasNext()) {
+					sb.append(delim);
+				}
+			}
+
+			return sb.toString();
+		}
+	}
+
 
 	/**
 	 * 生成uuid
@@ -160,16 +174,6 @@ public class StringUtil extends org.springframework.util.StringUtils {
 	public static String randomUUID() {
 		ThreadLocalRandom random = ThreadLocalRandom.current();
 		return new UUID(random.nextLong(), random.nextLong()).toString().replace(StringPool.DASH, StringPool.EMPTY);
-	}
-
-	/**
-	 * 转义HTML用于安全过滤
-	 *
-	 * @param html html
-	 * @return {String}
-	 */
-	public static String escapeHtml(String html) {
-		return HtmlUtils.htmlEscape(html);
 	}
 
 	/**
@@ -186,66 +190,6 @@ public class StringUtil extends org.springframework.util.StringUtils {
 	private static final String S_INT = "0123456789";
 	private static final String S_STR = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	private static final String S_ALL = S_INT + S_STR;
-
-	/**
-	 * 随机数生成
-	 *
-	 * @param count 字符长度
-	 * @return 随机数
-	 */
-	public static String random(int count) {
-		return StringUtil.random(count, RandomType.ALL);
-	}
-
-	/**
-	 * 随机数生成
-	 *
-	 * @param count      字符长度
-	 * @param randomType 随机数类别
-	 * @return 随机数
-	 */
-	public static String random(int count, RandomType randomType) {
-		if (count == 0) {
-			return "";
-		}
-		Assert.isTrue(count > 0, "Requested random string length " + count + " is less than 0.");
-		final ThreadLocalRandom random = ThreadLocalRandom.current();
-		char[] buffer = new char[count];
-		for (int i = 0; i < count; i++) {
-			if (RandomType.INT == randomType) {
-				buffer[i] = S_INT.charAt(random.nextInt(S_INT.length()));
-			} else if (RandomType.STRING == randomType) {
-				buffer[i] = S_STR.charAt(random.nextInt(S_STR.length()));
-			} else {
-				buffer[i] = S_ALL.charAt(random.nextInt(S_ALL.length()));
-			}
-		}
-		return new String(buffer);
-	}
-
-	/**
-	 * 格式化文本, {} 表示占位符<br>
-	 * 此方法只是简单将占位符 {} 按照顺序替换为参数<br>
-	 * 如果想输出 {} 使用 \\转义 { 即可，如果想输出 {} 之前的 \ 使用双转义符 \\\\ 即可<br>
-	 * 例：<br>
-	 * 通常使用：format("this is {} for {}", "a", "b") =》 this is a for b<br>
-	 * 转义{}： format("this is \\{} for {}", "a", "b") =》 this is \{} for a<br>
-	 * 转义\： format("this is \\\\{} for {}", "a", "b") =》 this is \a for b<br>
-	 *
-	 * @param template 文本模板，被替换的部分用 {} 表示
-	 * @param params   参数值
-	 * @return 格式化后的文本
-	 */
-	public static String format(CharSequence template, Object... params) {
-		if (null == template) {
-			return null;
-		}
-		if (Func.isEmpty(params) || isBlank(template)) {
-			return template.toString();
-		}
-		return StrFormatter.format(template.toString(), params);
-	}
-
 	/**
 	 * 有序的格式化文本，使用{number}做为占位符<br>
 	 * 例：<br>
@@ -259,172 +203,28 @@ public class StringUtil extends org.springframework.util.StringUtils {
 		return MessageFormat.format(pattern.toString(), arguments);
 	}
 
-	/**
-	 * 格式化文本，使用 {varName} 占位<br>
-	 * map = {a: "aValue", b: "bValue"} format("{a} and {b}", map) ---=》 aValue and bValue
-	 *
-	 * @param template 文本模板，被替换的部分用 {key} 表示
-	 * @param map      参数值对
-	 * @return 格式化后的文本
-	 */
-	public static String format(CharSequence template, Map<?, ?> map) {
-		if (null == template) {
-			return null;
-		}
-		if (null == map || map.isEmpty()) {
-			return template.toString();
-		}
-
-		String template2 = template.toString();
-		for (Map.Entry<?, ?> entry : map.entrySet()) {
-			template2 = template2.replace("{" + entry.getKey() + "}", Func.toStr(entry.getValue()));
-		}
-		return template2;
-	}
-
-	/**
-	 * 切分字符串，不去除切分后每个元素两边的空白符，不去除空白项
-	 *
-	 * @param str       被切分的字符串
-	 * @param separator 分隔符字符
-	 * @param limit     限制分片数，-1不限制
-	 * @return 切分后的集合
-	 */
-	public static List<String> split(CharSequence str, char separator, int limit) {
-		return split(str, separator, limit, false, false);
-	}
-
-	/**
-	 * 切分字符串，去除切分后每个元素两边的空白符，去除空白项
-	 *
-	 * @param str       被切分的字符串
-	 * @param separator 分隔符字符
-	 * @return 切分后的集合
-	 * @since 3.1.2
-	 */
-	public static List<String> splitTrim(CharSequence str, char separator) {
-		return splitTrim(str, separator, -1);
-	}
-
-	/**
-	 * 切分字符串，去除切分后每个元素两边的空白符，去除空白项
-	 *
-	 * @param str       被切分的字符串
-	 * @param separator 分隔符字符
-	 * @return 切分后的集合
-	 * @since 3.2.0
-	 */
-	public static List<String> splitTrim(CharSequence str, CharSequence separator) {
-		return splitTrim(str, separator, -1);
-	}
-
-	/**
-	 * 切分字符串，去除切分后每个元素两边的空白符，去除空白项
-	 *
-	 * @param str       被切分的字符串
-	 * @param separator 分隔符字符
-	 * @param limit     限制分片数，-1不限制
-	 * @return 切分后的集合
-	 * @since 3.1.0
-	 */
-	public static List<String> splitTrim(CharSequence str, char separator, int limit) {
-		return split(str, separator, limit, true, true);
-	}
-
-	/**
-	 * 切分字符串，去除切分后每个元素两边的空白符，去除空白项
-	 *
-	 * @param str       被切分的字符串
-	 * @param separator 分隔符字符
-	 * @param limit     限制分片数，-1不限制
-	 * @return 切分后的集合
-	 * @since 3.2.0
-	 */
-	public static List<String> splitTrim(CharSequence str, CharSequence separator, int limit) {
-		return split(str, separator, limit, true, true);
-	}
-
-	/**
-	 * 切分字符串，不限制分片数量
-	 *
-	 * @param str         被切分的字符串
-	 * @param separator   分隔符字符
-	 * @param isTrim      是否去除切分字符串后每个元素两边的空格
-	 * @param ignoreEmpty 是否忽略空串
-	 * @return 切分后的集合
-	 * @since 3.0.8
-	 */
-	public static List<String> split(CharSequence str, char separator, boolean isTrim, boolean ignoreEmpty) {
-		return split(str, separator, 0, isTrim, ignoreEmpty);
-	}
-
-	/**
-	 * 切分字符串
-	 *
-	 * @param str         被切分的字符串
-	 * @param separator   分隔符字符
-	 * @param limit       限制分片数，-1不限制
-	 * @param isTrim      是否去除切分字符串后每个元素两边的空格
-	 * @param ignoreEmpty 是否忽略空串
-	 * @return 切分后的集合
-	 * @since 3.0.8
-	 */
-	public static List<String> split(CharSequence str, char separator, int limit, boolean isTrim, boolean ignoreEmpty) {
-		if (null == str) {
-			return new ArrayList<>(0);
-		}
-		return StrSpliter.split(str.toString(), separator, limit, isTrim, ignoreEmpty);
-	}
-
-	/**
-	 * 切分字符串
-	 *
-	 * @param str         被切分的字符串
-	 * @param separator   分隔符字符
-	 * @param limit       限制分片数，-1不限制
-	 * @param isTrim      是否去除切分字符串后每个元素两边的空格
-	 * @param ignoreEmpty 是否忽略空串
-	 * @return 切分后的集合
-	 * @since 3.2.0
-	 */
-	public static List<String> split(CharSequence str, CharSequence separator, int limit, boolean isTrim, boolean ignoreEmpty) {
-		if (null == str) {
-			return new ArrayList<>(0);
-		}
-		final String separatorStr = (null == separator) ? null : separator.toString();
-		return StrSpliter.split(str.toString(), separatorStr, limit, isTrim, ignoreEmpty);
-	}
-
-	/**
-	 * 切分字符串
-	 *
-	 * @param str       被切分的字符串
-	 * @param separator 分隔符
-	 * @return 字符串
-	 */
-	public static String[] split(CharSequence str, CharSequence separator) {
-		if (str == null) {
-			return new String[]{};
-		}
-
-		final String separatorStr = (null == separator) ? null : separator.toString();
-		return StrSpliter.splitToArray(str.toString(), separatorStr, 0, false, false);
-	}
-
-	/**
-	 * 根据给定长度，将给定字符串截取为多个部分
-	 *
-	 * @param str 字符串
-	 * @param len 每一个小节的长度
-	 * @return 截取后的字符串数组
-	 * @see StrSpliter#splitByLength(String, int)
-	 */
-	public static String[] split(CharSequence str, int len) {
-		if (null == str) {
-			return new String[]{};
-		}
-		return StrSpliter.splitByLength(str.toString(), len);
-	}
+//	/**
+//	 * 格式化文本，使用 {varName} 占位<br>
+//	 * map = {a: "aValue", b: "bValue"} format("{a} and {b}", map) ---=》 aValue and bValue
+//	 *
+//	 * @param template 文本模板，被替换的部分用 {key} 表示
+//	 * @param map      参数值对
+//	 * @return 格式化后的文本
+//	 */
+//	public static String format(CharSequence template, Map<?, ?> map) {
+//		if (null == template) {
+//			return null;
+//		}
+//		if (null == map || map.isEmpty()) {
+//			return template.toString();
+//		}
+//
+//		String template2 = template.toString();
+//		for (Map.Entry<?, ?> entry : map.entrySet()) {
+//			template2 = template2.replace("{" + entry.getKey() + "}", Func.toStr(entry.getValue()));
+//		}
+//		return template2;
+//	}
 
 	/**
 	 * 指定字符是否在字符串中出现过
@@ -438,37 +238,6 @@ public class StringUtil extends org.springframework.util.StringUtils {
 		return indexOf(str, searchChar) > -1;
 	}
 
-	/**
-	 * 查找指定字符串是否包含指定字符串列表中的任意一个字符串
-	 *
-	 * @param str      指定字符串
-	 * @param testStrs 需要检查的字符串数组
-	 * @return 是否包含任意一个字符串
-	 * @since 3.2.0
-	 */
-	public static boolean containsAny(CharSequence str, CharSequence... testStrs) {
-		return null != getContainsStr(str, testStrs);
-	}
-
-	/**
-	 * 查找指定字符串是否包含指定字符串列表中的任意一个字符串，如果包含返回找到的第一个字符串
-	 *
-	 * @param str      指定字符串
-	 * @param testStrs 需要检查的字符串数组
-	 * @return 被包含的第一个字符串
-	 * @since 3.2.0
-	 */
-	public static String getContainsStr(CharSequence str, CharSequence... testStrs) {
-		if (isEmpty(str) || Func.isEmpty(testStrs)) {
-			return null;
-		}
-		for (CharSequence checkStr : testStrs) {
-			if (str.toString().contains(checkStr)) {
-				return checkStr.toString();
-			}
-		}
-		return null;
-	}
 
 	/**
 	 * 是否包含特定字符，忽略大小写，如果给定两个参数都为<code>null</code>，返回true
@@ -485,39 +254,6 @@ public class StringUtil extends org.springframework.util.StringUtils {
 		return str.toString().toLowerCase().contains(testStr.toString().toLowerCase());
 	}
 
-	/**
-	 * 查找指定字符串是否包含指定字符串列表中的任意一个字符串<br>
-	 * 忽略大小写
-	 *
-	 * @param str      指定字符串
-	 * @param testStrs 需要检查的字符串数组
-	 * @return 是否包含任意一个字符串
-	 * @since 3.2.0
-	 */
-	public static boolean containsAnyIgnoreCase(CharSequence str, CharSequence... testStrs) {
-		return null != getContainsStrIgnoreCase(str, testStrs);
-	}
-
-	/**
-	 * 查找指定字符串是否包含指定字符串列表中的任意一个字符串，如果包含返回找到的第一个字符串<br>
-	 * 忽略大小写
-	 *
-	 * @param str      指定字符串
-	 * @param testStrs 需要检查的字符串数组
-	 * @return 被包含的第一个字符串
-	 * @since 3.2.0
-	 */
-	public static String getContainsStrIgnoreCase(CharSequence str, CharSequence... testStrs) {
-		if (isEmpty(str) || Func.isEmpty(testStrs)) {
-			return null;
-		}
-		for (CharSequence testStr : testStrs) {
-			if (containsIgnoreCase(str, testStr)) {
-				return testStr.toString();
-			}
-		}
-		return null;
-	}
 
 	/**
 	 * 改进JDK subString<br>
@@ -862,6 +598,9 @@ public class StringUtil extends org.springframework.util.StringUtils {
 		return sub(string, fromIndex, string.length());
 	}
 
+	public static boolean isEmpty(Object str) {
+		return str == null || "".equals(str);
+	}
 	/**
 	 * 指定范围内查找指定字符
 	 *
@@ -1264,40 +1003,6 @@ public class StringUtil extends org.springframework.util.StringUtils {
 	 */
 	public static StringWriter getWriter() {
 		return new StringWriter();
-	}
-
-	/**
-	 * 统计指定内容中包含指定字符串的数量<br>
-	 * 参数为 {@code null} 或者 "" 返回 {@code 0}.
-	 *
-	 * <pre>
-	 * StringUtil.count(null, *)       = 0
-	 * StringUtil.count("", *)         = 0
-	 * StringUtil.count("abba", null)  = 0
-	 * StringUtil.count("abba", "")    = 0
-	 * StringUtil.count("abba", "a")   = 2
-	 * StringUtil.count("abba", "ab")  = 1
-	 * StringUtil.count("abba", "xxx") = 0
-	 * </pre>
-	 *
-	 * @param content      被查找的字符串
-	 * @param strForSearch 需要查找的字符串
-	 * @return 查找到的个数
-	 */
-	public static int count(CharSequence content, CharSequence strForSearch) {
-		if (Func.hasEmpty(content, strForSearch) || strForSearch.length() > content.length()) {
-			return 0;
-		}
-
-		int count = 0;
-		int idx = 0;
-		final String content2 = content.toString();
-		final String strForSearch2 = strForSearch.toString();
-		while ((idx = content2.indexOf(strForSearch2, idx)) > -1) {
-			count++;
-			idx += strForSearch.length();
-		}
-		return count;
 	}
 
 	/**

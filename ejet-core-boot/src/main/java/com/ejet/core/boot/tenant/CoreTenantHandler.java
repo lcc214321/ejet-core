@@ -16,7 +16,7 @@
 package com.ejet.core.boot.tenant;
 
 import com.baomidou.mybatisplus.extension.plugins.tenant.TenantHandler;
-import com.ejet.core.kernel.utils.StringUtil;
+import com.ejet.core.kernel.web.utils.StringUtil;
 import com.ejet.core.secure.utils.SecureUtil;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

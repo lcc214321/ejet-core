@@ -235,4 +235,49 @@ public class ReflectUtil {
 
 
 
+
+
+    /**
+     * 获得StackTraceElement
+     *
+     * @return
+     */
+    public static StackTraceElement getStackTraceElement() {
+        StackTraceElement caller = Thread.currentThread().getStackTrace()[4];
+        return caller;
+    }
+    /**
+     * 获得调用者类名
+     *
+     * @return
+     */
+    public static String getStackTraceOfClassName() {
+        StackTraceElement caller = Thread.currentThread().getStackTrace()[4];
+        String callerClazzName = caller.getClassName(); // 获取到类名
+        callerClazzName = callerClazzName.substring(callerClazzName
+                .lastIndexOf(".") + 1);
+        return callerClazzName;
+    }
+    /**
+     * 获得调用方法名
+     *
+     * @return
+     */
+    public static String getStackTraceOfMethodName() {
+        StackTraceElement caller = Thread.currentThread().getStackTrace()[4];
+        return caller.getMethodName();
+    }
+    /**
+     * 获得调用行
+     *
+     * @return
+     */
+    public static int getStackTraceOfLineNumber() {
+        StackTraceElement caller = Thread.currentThread().getStackTrace()[4];
+        return caller.getLineNumber();
+    }
+
+
+
+
 }

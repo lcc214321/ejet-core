@@ -15,9 +15,9 @@
  */
 package com.ejet.core.secure.aspect;
 
-import com.ejet.core.kernel.api.ResultCode;
-import com.ejet.core.kernel.utils.ClassUtil;
-import com.ejet.core.kernel.utils.StringUtil;
+import com.ejet.core.kernel.web.api.ResultCode;
+import com.ejet.core.kernel.web.utils.ClassUtil;
+import com.ejet.core.kernel.web.utils.StringUtil;
 import com.ejet.core.secure.annotation.PreAuth;
 import com.ejet.core.secure.auth.AuthFun;
 import com.ejet.core.secure.exception.SecureException;

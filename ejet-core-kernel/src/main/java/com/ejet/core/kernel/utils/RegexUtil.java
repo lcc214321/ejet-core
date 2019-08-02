@@ -1,6 +1,6 @@
 package com.ejet.core.kernel.utils;
 
-import org.springframework.lang.Nullable;
+
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -83,7 +83,6 @@ public class RegexUtil {
 	 * @param beFoundString 字符串
 	 * @return {boolean}
 	 */
-	@Nullable
 	public static String findResult(String regex, String beFoundString) {
 		Pattern pattern = Pattern.compile(regex);
 		Matcher matcher = pattern.matcher(beFoundString);

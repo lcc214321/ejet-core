@@ -2,7 +2,7 @@ package com.ejet.core.comm;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.ejet.core.comm.mybatisplus.MybatisPlusGenerator;
-import com.ejet.core.kernel.utils.BeanUtil;
+import com.ejet.core.kernel.web.utils.BeanUtil;
 
 import java.io.IOException;
 import java.util.HashMap;

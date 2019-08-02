@@ -15,7 +15,7 @@
  */
 package com.ejet.core.logger.error;
 
-import com.ejet.core.kernel.jackson.JsonUtil;
+import com.ejet.core.kernel.web.jackson.JsonUtil;
 import org.springframework.boot.autoconfigure.web.ErrorProperties;
 import org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController;
 import org.springframework.boot.web.servlet.error.ErrorAttributes;

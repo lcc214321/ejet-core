@@ -16,9 +16,9 @@
 
 package com.ejet.core.logger.publisher;
 
-import com.ejet.core.kernel.constant.CoConstant;
-import com.ejet.core.kernel.utils.SpringUtil;
-import com.ejet.core.kernel.utils.WebUtil;
+import com.ejet.core.kernel.web.constant.CoConstant;
+import com.ejet.core.kernel.web.utils.SpringUtil;
+import com.ejet.core.kernel.web.utils.WebUtil;
 import com.ejet.core.logger.annotation.ApiLog;
 import com.ejet.core.logger.constant.EventConstant;
 import com.ejet.core.logger.event.ApiLogEvent;

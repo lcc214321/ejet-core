@@ -1,10 +1,10 @@
 package com.ejet.core.boot.logger;
 
-import com.ejet.core.kernel.jackson.JsonUtil;
-import com.ejet.core.kernel.utils.BeanUtil;
-import com.ejet.core.kernel.utils.ClassUtil;
-import com.ejet.core.kernel.utils.StringUtil;
-import com.ejet.core.kernel.utils.WebUtil;
+import com.ejet.core.kernel.web.jackson.JsonUtil;
+import com.ejet.core.kernel.web.utils.BeanUtil;
+import com.ejet.core.kernel.web.utils.ClassUtil;
+import com.ejet.core.kernel.web.utils.StringUtil;
+import com.ejet.core.kernel.web.utils.WebUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;

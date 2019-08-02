@@ -15,10 +15,10 @@
  */
 package com.ejet.core.secure.auth;
 
-import com.ejet.core.kernel.constant.RoleConstant;
-import com.ejet.core.kernel.utils.CollectionUtil;
-import com.ejet.core.kernel.utils.Func;
-import com.ejet.core.kernel.utils.StringUtil;
+import com.ejet.core.kernel.web.constant.RoleConstant;
+import com.ejet.core.kernel.web.utils.CollectionUtil;
+import com.ejet.core.kernel.web.utils.Func;
+import com.ejet.core.kernel.web.utils.StringUtil;
 import com.ejet.core.secure.utils.SecureUtil;
 
 /**

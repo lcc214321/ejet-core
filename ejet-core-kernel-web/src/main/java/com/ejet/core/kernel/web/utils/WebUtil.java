@@ -1,6 +1,6 @@
-package com.ejet.core.kernel.utils;
+package com.ejet.core.kernel.web.utils;
 
-import com.ejet.core.kernel.jackson.JsonUtil;
+import com.ejet.core.kernel.web.jackson.JsonUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;
 import org.springframework.lang.Nullable;

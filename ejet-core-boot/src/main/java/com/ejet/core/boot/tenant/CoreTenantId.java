@@ -15,8 +15,8 @@
  */
 package com.ejet.core.boot.tenant;
 
-import com.ejet.core.kernel.utils.RandomType;
-import com.ejet.core.kernel.utils.StringUtil;
+import com.ejet.core.kernel.web.utils.RandomType;
+import com.ejet.core.kernel.web.utils.StringUtil;
 
 /**
  * id生成器

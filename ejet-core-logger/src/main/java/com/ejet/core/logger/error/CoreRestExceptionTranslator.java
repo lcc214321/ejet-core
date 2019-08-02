@@ -15,11 +15,11 @@
  */
 package com.ejet.core.logger.error;
 
-import com.ejet.core.kernel.api.R;
-import com.ejet.core.kernel.api.ResultCode;
-import com.ejet.core.kernel.utils.Func;
-import com.ejet.core.kernel.utils.UrlUtil;
-import com.ejet.core.kernel.utils.WebUtil;
+import com.ejet.core.kernel.web.api.R;
+import com.ejet.core.kernel.web.api.ResultCode;
+import com.ejet.core.kernel.web.utils.Func;
+import com.ejet.core.kernel.web.utils.UrlUtil;
+import com.ejet.core.kernel.web.utils.WebUtil;
 import com.ejet.core.logger.exception.ServiceException;
 import com.ejet.core.logger.publisher.ErrorLogPublisher;
 import com.ejet.core.secure.exception.SecureException;

@@ -15,10 +15,10 @@
  */
 package com.ejet.core.boot.file;
 
-import com.ejet.core.kernel.constant.SystemConstant;
-import com.ejet.core.kernel.utils.DateUtil;
-import com.ejet.core.kernel.utils.ImageUtil;
-import com.ejet.core.kernel.utils.StringPool;
+import com.ejet.core.kernel.web.constant.SystemConstant;
+import com.ejet.core.kernel.web.utils.DateUtil;
+import com.ejet.core.kernel.web.utils.ImageUtil;
+import com.ejet.core.kernel.web.utils.StringPool;
 
 import java.io.File;
 import java.io.FileNotFoundException;

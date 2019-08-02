@@ -1,6 +1,5 @@
 package com.ejet.core.kernel.utils;
 
-import org.springframework.lang.Nullable;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -58,11 +57,11 @@ public class XmlUtil {
 		StringReader sr = new StringReader(xmlStr.trim());
 		InputSource inputSource = new InputSource(sr);
 		XmlUtil xmlUtil = create(inputSource);
-		IoUtil.closeQuietly(sr);
+		IOUtil.closeQuietly(sr);
 		return xmlUtil;
 	}
 
-	private Object evalXPath(String expression, @Nullable Object item, QName returnType) {
+	private Object evalXPath(String expression, Object item, QName returnType) {
 		item = null == item ? doc : item;
 		try {
 			return path.evaluate(expression, item, returnType);

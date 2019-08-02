@@ -1,6 +1,6 @@
-package com.ejet.core.kernel.utils;
+package com.ejet.core.kernel.web.utils;
 
-import com.ejet.core.kernel.jackson.JsonUtil;
+import com.ejet.core.kernel.web.jackson.JsonUtil;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;

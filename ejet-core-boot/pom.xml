@@ -31,7 +31,7 @@
 
         <dependency>
             <groupId>com.ejet</groupId>
-            <artifactId>ejet-core-kernel</artifactId>
+            <artifactId>ejet-core-kernel-web</artifactId>
             <version>${ejet-core.version}</version>
         </dependency>
 
